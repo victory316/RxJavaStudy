@@ -1,18 +1,5 @@
-import common.Order;
 import io.reactivex.Observable;
-import io.reactivex.Single;
-import io.reactivex.observables.ConnectableObservable;
-import io.reactivex.subjects.AsyncSubject;
-import io.reactivex.subjects.BehaviorSubject;
-import io.reactivex.subjects.ReplaySubject;
-import org.reactivestreams.Publisher;
-import org.reactivestreams.Subscriber;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.concurrent.*;
+import io.reactivex.functions.Function;
 
 import static java.lang.Thread.sleep;
 
@@ -27,6 +14,29 @@ public class ThirdExample {
      **/
 
     public static void main(String[] args) {
-        
+        Function<String, Integer> ballToIndex = ball -> {
+            switch(ball) {
+                case "RED": return 1;
+                case "YELLOW": return 2;
+                case "GREEN": return 3;
+                case "BLUE": return 5;
+                default: return -1;
+            }
+        };
+
+        String[] balls = {"1", "2", "3", "5"};
+        String[] colors = {"RED", "BLUE", "BLUE"};
+        Observable<String> source = Observable.fromArray(balls)
+                .map(ball -> ball + "<>");
+        Observable<Integer> source2 = Observable.fromArray(colors)
+                .map(ballToIndex);
+
+        source.subscribe(output -> System.out.println(output));
+        source2.subscribe(output -> System.out.println(output));
+
+    }
+
+    public static String getDiamond(String ball) {
+        return ball + "<>";
     }
 }
