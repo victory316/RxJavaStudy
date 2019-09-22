@@ -1,6 +1,8 @@
 import io.reactivex.Observable;
 import io.reactivex.functions.Function;
 
+import java.util.Scanner;
+
 import static java.lang.Thread.sleep;
 
 public class ThirdExample {
@@ -34,6 +36,24 @@ public class ThirdExample {
         source.subscribe(output -> System.out.println(output));
         source2.subscribe(output -> System.out.println(output));
 
+        // map과의 차이는 flatMap의 경우에는 observable을 반환하기 때문에 데이터를 여러번 뺄 수 있음. (from source)
+        Observable<String> flatMapSource = Observable.fromArray(colors)
+                .flatMap(color -> Observable.just(color + " 색깔 " + color + " 색깔"));
+
+        flatMapSource.subscribe(output -> System.out.println(output));
+
+        // 어디 한번 해봅시다. 구구단 만들기.
+        // 이건 기존 자바코드.
+
+        Scanner in = new Scanner(System.in);
+        System.out.println("gugudan output");
+        int dan = Integer.parseInt(in.nextLine());
+
+        for (int row = 1; row <= 9; ++row) {
+            System.out.println(dan + " * " + row + " = " + dan * row);
+        }
+
+        
     }
 
     public static String getDiamond(String ball) {
