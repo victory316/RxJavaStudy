@@ -1,6 +1,10 @@
+import io.reactivex.Maybe;
 import io.reactivex.Observable;
 import io.reactivex.functions.Function;
+import javafx.util.Pair;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import static java.lang.Thread.sleep;
@@ -53,7 +57,30 @@ public class ThirdExample {
             System.out.println(dan + " * " + row + " = " + dan * row);
         }
 
-        
+        // Filter
+
+        String[] objs = {"1 CIRCLE", "2 DIAMOND", "3 TRIANGLE", "4 DIAMOND", "5 CIRCLE", "6 HEXAGON"};
+
+        Observable<String> sourceToFlter = Observable.fromArray(objs)
+                .filter(obj -> obj.endsWith("CIRCLE"));
+
+        sourceToFlter.subscribe(System.out::println);
+
+        // Map, filter, reduce
+
+        List<Pair<String, Integer>> sales = new ArrayList<>();
+
+        sales.add(new Pair("TV",2500));
+        sales.add(new Pair("Camera", 300));
+        sales.add(new Pair("TV", 1600));
+        sales.add(new Pair("Phone", 800));
+
+        Maybe<Integer> tvSales = Observable.fromIterable(sales)
+                .filter(sale -> "TV".equals(sale.getKey()))
+                .map(sale -> sale.getValue())
+                .reduce((sale1, sale2) -> sale1 + sale2);
+
+        tvSales.subscribe(total -> System.out.println("TV Sales : $" + total));
     }
 
     public static String getDiamond(String ball) {
