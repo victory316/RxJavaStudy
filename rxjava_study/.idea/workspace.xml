@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00a5364d-8f0e-44a8-b155-aef0cb172ba2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FourExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/CommonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ReactiveSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/Shape.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/classAnalysis.bin" afterDir="false" />
@@ -14,6 +12,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/FourExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/FourExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/common/Log.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/common/Log.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FourExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FourExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Log.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +90,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FourExample">
+  <component name="RunManager" selected="Application.ReactiveSum">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -111,6 +113,13 @@
     </configuration>
     <configuration name="GugudanExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GugudanExample" />
+      <module name="hard.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReactiveSum" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ReactiveSum" />
       <module name="hard.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,6 +165,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.ReactiveSum" />
       <item itemvalue="Application.FirstExample" />
       <item itemvalue="Application.GugudanExample" />
       <item itemvalue="Application.FourExample" />

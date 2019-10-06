@@ -5,4 +5,8 @@ public class Log {
         long time = System.currentTimeMillis() - CommonUtils.startTime;
         System.out.println(time + " | " + "value = " + obj);
     }
+
+    public void i() {
+        System.out.println();
+    }
 }
