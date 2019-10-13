@@ -1,4 +1,6 @@
+import common.CommonUtils;
 import common.Log;
+import common.OkHttpHelper;
 import io.reactivex.Observable;
 import io.reactivex.schedulers.Schedulers;
 import okhttp3.*;
@@ -53,8 +55,16 @@ public class HttpGetExample {
 //        HttpGetExample demo = new HttpGetExample();
 //        demo.run();
 //
-//        Observable<String> first = Observable.just(FIRST_URL)
-//                .subscribeOn(Schedulers.io())
-//                .map(OkHttpClient::g)
+        Observable<String> first = Observable.just(FIRST_URL)
+                .subscribeOn(Schedulers.io())
+                .map(OkHttpHelper::get);
+        Observable<String> second = Observable.just(SECOND_URL)
+                .subscribeOn(Schedulers.io())
+                .map(OkHttpHelper::get);
+
+        Observable.zip(first, second, (a,b) -> ("\n>> " + a + " \n>> " + b ))
+                .subscribe(Log::it);
+
+        CommonUtils.sleep(5000);
     }
 }
