@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00a5364d-8f0e-44a8-b155-aef0cb172ba2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ReactiveSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/FifthExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/common/ShapeCannotFlipException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FifthExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/ShapeCannotFlipException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/classAnalysis.bin" afterDir="false" />
@@ -12,10 +15,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/FourExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/FourExample.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/common/Log.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/common/Log.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FourExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FourExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/common/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/common/Shape.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/common/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Shape.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,11 +74,14 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="common" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -90,9 +96,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ReactiveSum">
+  <component name="RunManager" selected="Application.FifthExample">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FifthExample" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="FifthExample" />
+      <module name="hard.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -125,10 +138,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThirdExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ThirdExample" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ThirdExample" />
-      <module name="study.hard.main" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <module name="hard.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -165,18 +177,18 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.FifthExample" />
       <item itemvalue="Application.ReactiveSum" />
+      <item itemvalue="Application.ThirdExample" />
       <item itemvalue="Application.FirstExample" />
       <item itemvalue="Application.GugudanExample" />
       <item itemvalue="Application.FourExample" />
-      <item itemvalue="Application.ThirdExample" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.FourExample" />
         <item itemvalue="Application.GugudanExample" />
         <item itemvalue="Application.FirstExample" />
-        <item itemvalue="Application.ThirdExample" />
       </list>
     </recent_temporary>
   </component>
