@@ -19,6 +19,6 @@ public class FifthExample {
                 .map(Shape::flip);
 
         source.subscribe(Log::i);
-        CommonUtils.sleep(1000);
+        CommonUtils.sleep(500);
     }
 }

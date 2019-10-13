@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00a5364d-8f0e-44a8-b155-aef0cb172ba2" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/build/classes/java/main/FifthExample.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/classes/java/main/common/ShapeCannotFlipException.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/FifthExample.java" afterDir="false" />
@@ -19,6 +20,9 @@
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/common/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/common/Shape.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/common/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Log.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/common/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Shape.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 51f2e81e6ff6c58e9e7a7c920c104c96c405976f
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
